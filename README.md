@@ -31,3 +31,12 @@ app import --uri https://dataflow.spring.io/Einstein-SR2-stream-applications-kaf
 Open Dashboard:
 
 http://localhost:9393/dashboard/#/streams/definitions
+
+
+Reference Docs:
+
+https://dataflow.spring.io/docs/installation/
+
+https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#getting-started-local
+
+https://docs.spring.io/spring-cloud-dataflow/docs/2.0.0.BUILD-SNAPSHOT/reference/htmlsingle/#spring-cloud-dataflow-stream-examples
