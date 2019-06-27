@@ -4,6 +4,7 @@ Installation instructions on Local
 
 Download the Spring Cloud Data Flow Server and shell by using the following commands:
 wget https://repo.spring.io/release/org/springframework/cloud/spring-cloud-dataflow-server/2.1.0.RELEASE/spring-cloud-dataflow-server-2.1.0.RELEASE.jar
+
 wget https://repo.spring.io/release/org/springframework/cloud/spring-cloud-dataflow-shell/2.1.0.RELEASE/spring-cloud-dataflow-shell-2.1.0.RELEASE.jar
 
 Download Skipper by running the following commands:
