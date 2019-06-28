@@ -1,0 +1,13 @@
+docker exec -it dataflow-server java -jar shell.jar
+
+dataflow:>stream create --name words --definition "http --server.port=9900 | splitter --expression=payload.split(' ') | log"
+Created new stream 'words'
+
+dataflow:>stream deploy words --properties "app.splitter.producer.partitionKeyExpression=payload,deployer.log.count=2"
+Deployed stream 'words'
+
+dataflow:>http post --target http://localhost:9900 --data "How much wood would a woodchuck chuck if a woodchuck could chuck wood"
+> POST (text/plain;Charset=UTF-8) http://localhost:9900 How much wood would a woodchuck chuck if a woodchuck could chuck wood
+> 202 ACCEPTED
+
+http post --target http://192.168.99.100:9900 --data "How much wood would a woodchuck chuck if a woodchuck could chuck wood"
